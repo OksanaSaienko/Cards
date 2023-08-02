@@ -1,0 +1,135 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+
+.page-wrap {
+    min-height: 100vh;
+    background-image: url("./imeges/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* backdrop-filter: blur(64px); */
+    /* opacity:0.3; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-wrap {
+    display: flex;
+    max-width: 1100px;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.card {
+    width: 300px;
+    /* height: 400px; */
+    /* padding: 0px 75px 96px; */
+    border-radius: 32px;
+    backdrop-filter: blur(64px);
+    box-shadow: 2px 5px 5px 10px #30425c inset;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card-img{
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    object-position:top;
+    margin-bottom: 10px;
+}
+
+.button{
+    border-radius: 20px;
+    background-color: brown;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    margin: 0 auto;
+
+    cursor: pointer;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    text-align: center;
+
+}
+a{ color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 128.571% */
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.card-title{
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 122.222% */
+    margin-bottom: 10px;
+
+
+}
+.cart-text{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0px 10px;
+    /* word-wrap: break-word; */
+}
+p{
+    word-wrap: break-word;
+}
+.points{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+
+} 
+
+/* .tr{ color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+} */
+.hero::after{
+    content: "";
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
